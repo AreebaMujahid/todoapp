@@ -1,0 +1,7 @@
+<h1> Delete </h1>
+<p> Are u sure you want to delete that item {{item}} ? </p>
+<a href="{% url 'index' %}">Cancel</a>
+<form method= "POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="confirm">
+</form>
